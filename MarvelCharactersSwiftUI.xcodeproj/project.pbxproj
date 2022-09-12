@@ -27,6 +27,7 @@
 		822C5F9728CA31CE005F0372 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822C5F8D28CA31CE005F0372 /* ErrorView.swift */; };
 		822C5F9C28CA31F1005F0372 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822C5F9A28CA31F1005F0372 /* StatusModel.swift */; };
 		822C5F9D28CA31F1005F0372 /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822C5F9B28CA31F1005F0372 /* MarvelModel.swift */; };
+		827091E128CF4D2700F0A908 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 827091E028CF4D2700F0A908 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		822C5F8D28CA31CE005F0372 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		822C5F9A28CA31F1005F0372 /* StatusModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		822C5F9B28CA31F1005F0372 /* MarvelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
+		823F271728CDDFEE00BADE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827091E128CF4D2700F0A908 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +123,7 @@
 		822C5F4F28CA2C3E005F0372 /* MarvelCharactersSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				823F271728CDDFEE00BADE48 /* Info.plist */,
 				822C5F9828CA31F1005F0372 /* Domain */,
 				822C5F7F28CA31CE005F0372 /* Presentation */,
 				822C5F7D28CA318E005F0372 /* Data */,
@@ -254,6 +258,9 @@
 			dependencies = (
 			);
 			name = MarvelCharactersSwiftUI;
+			packageProductDependencies = (
+				827091E028CF4D2700F0A908 /* Kingfisher */,
+			);
 			productName = MarvelCharactersSwiftUI;
 			productReference = 822C5F4D28CA2C3E005F0372 /* MarvelCharactersSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -326,6 +333,9 @@
 				Base,
 			);
 			mainGroup = 822C5F4428CA2C3E005F0372;
+			packageReferences = (
+				827091DF28CF4D2700F0A908 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 822C5F4E28CA2C3E005F0372 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -541,8 +551,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharactersSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MPX3NCR38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelCharactersSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,8 +581,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarvelCharactersSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MPX3NCR38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelCharactersSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -701,6 +715,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		827091DF28CF4D2700F0A908 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		827091E028CF4D2700F0A908 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 827091DF28CF4D2700F0A908 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 822C5F4528CA2C3E005F0372 /* Project object */;
 }

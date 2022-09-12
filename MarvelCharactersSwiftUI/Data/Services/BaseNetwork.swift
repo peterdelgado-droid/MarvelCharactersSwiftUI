@@ -13,11 +13,8 @@ import CryptoKit
 
 let server = "https://gateway.marvel.com"
 
-let privateKey = "697ba75a8bd5a48b720e3cf2de030dee3cdfc232"
-let publicKey = "16386cc7e74a33499265f775d6070bd4"
-
-//let privateKey = "8c8ad9897fdc3bb8ae1268acd9a89741ba0b720a"
-//let publicKey = "1e113f8b3d71dca2aa057267609e35fb"
+let privateKey = "8c8ad9897fdc3bb8ae1268acd9a89741ba0b720a"
+let publicKey = "1e113f8b3d71dca2aa057267609e35fb"
 let ts = 1
 let orderBy = "-modified"
 
@@ -25,7 +22,7 @@ let orderBy = "-modified"
 //let digest = Insecure.MD5.hash(data: md5InputData)
 //let hashString = digest.map { String(format: "%02x", $0) }.joined()
 
-let hashString = "91908452168cd8a52e3e1f4eb09e1261"
+let hashString = "9565dbf8edebc6148572a8c4aee08076"
 
 struct HTTPMethods {
 	static let post = "POST"
